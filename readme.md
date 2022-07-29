@@ -34,7 +34,9 @@ El nuevo formato de mensaje será:
 
 **Nota:** incluir en el frontend el script de normalizr de la siguiente cdn: https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js
 
-Así podremos utilizar los mismos métodos de normalizr que en el backend. Por ejemplo:  `new normalizr.schema.Entity , normalizr.denormalize(...,...,...)`
+Así podremos utilizar los mismos métodos de normalizr que en el backend. Por ejemplo:
+
+	`new normalizr.schema.Entity , normalizr.denormalize(...,...,...)`
 
 
 **Detalles del desafio:** 
