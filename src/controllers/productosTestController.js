@@ -3,13 +3,11 @@ const fs = require("fs");
 const path = require("path");
 const Handlebars = require("handlebars");
 
-const indexHbs =
-  fs.readFileSync(path.join(__dirname, "../../public/assets/views/index.hbs")) +
-  "";
+faker.locale = "es";
+
+const indexHbs = fs.readFileSync(path.join(__dirname, "../../public/assets/views/index.hbs")) + "";
 const tabla_productos =
-  fs.readFileSync(
-    path.join(__dirname, "../../public/assets/views/tabla_productos.hbs")
-  ) + "";
+  fs.readFileSync(path.join(__dirname, "../../public/assets/views/tabla_productos.hbs")) + "";
 
 async function getProductosTest(req, res) {
   const cantidad = req.query.cant || 5;
